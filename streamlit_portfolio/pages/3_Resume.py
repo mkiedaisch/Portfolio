@@ -1,15 +1,37 @@
 import streamlit as st
 import os
 
-st.title("Resume")
+st.set_page_config(page_title="Resume")
 
-# Dynamically get path to resume
+st.title("📄 Resume")
+st.markdown("___")
+
+st.write("""
+Below is a quick visual preview of my resume.  
+You can download the full PDF or visit my LinkedIn for more details.
+
+""")
+
+# Show the resume preview image
+st.image("resume_preview.png", caption="Matthew Kiedaisch Resume Preview", use_column_width=True)
+
+st.markdown("---")
+
+# Path to the actual PDF file
 resume_path = os.path.join(os.path.dirname(__file__), "..", "resume.pdf")
 
+# Download button
 with open(resume_path, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
-st.download_button(label="📄 Download Resume",
-                   data=PDFbyte,
-                   file_name="Matthew_Kiedaisch_Resume.pdf",
-                   mime="application/pdf")
+st.download_button(
+    label="📎 Download Full Resume (PDF)",
+    data=PDFbyte,
+    file_name="Matthew_Kiedaisch_Resume.pdf",
+    mime="application/pdf"
+)
+
+# LinkedIn link
+st.markdown("""
+[🔗 View my LinkedIn](https://www.linkedin.com/in/matthew-kiedaisch)
+""")
