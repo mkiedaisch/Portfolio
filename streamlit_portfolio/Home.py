@@ -24,4 +24,4 @@ st.page_link("pages/2_Projects.py", label="📊 Projects", icon="🧠")
 st.page_link("pages/3_Resume.py", label="📎 Resume", icon="📄")
 
 st.markdown("___")
-st.caption("UT Austin | Math & Finance & CS | Built by me | Work in Progress with much more to come.")
+st.caption("UT Austin | Math & Finance & CS | Built by me | Work in progress with much more to come.")
