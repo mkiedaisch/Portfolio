@@ -1,8 +1,12 @@
 import streamlit as st
+import os
 
 st.title("Resume")
 
-with open("../resume.pdf", "rb") as pdf_file:
+# Dynamically get path to resume
+resume_path = os.path.join(os.path.dirname(__file__), "..", "resume.pdf")
+
+with open(resume_path, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.download_button(label="📄 Download Resume",
