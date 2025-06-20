@@ -18,7 +18,7 @@ st.image("resume_preview.png", caption="Matthew Kiedaisch Resume Preview", use_c
 st.markdown("---")
 
 # Path to the actual PDF file
-resume_path = os.path.join(os.path.dirname(__file__), "..", "resume.pdf")
+resume_path = os.path.join(os.path.dirname(__file__), "..", "Kiedaisch_Matthew_Resume.pdf")
 
 # Download button
 with open(resume_path, "rb") as pdf_file:
@@ -27,7 +27,7 @@ with open(resume_path, "rb") as pdf_file:
 st.download_button(
     label="📎 Download Full Resume (PDF)",
     data=PDFbyte,
-    file_name="Matthew_Kiedaisch_Resume.pdf",
+    file_name="Kiedaisch_Matthew_Resume.pdf",
     mime="application/pdf"
 )
 
