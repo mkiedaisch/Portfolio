@@ -13,7 +13,7 @@ You can download the full PDF or visit my LinkedIn for more details.
 """)
 
 # Show the resume preview image
-st.image("resume_preview1.png", caption="Matthew Kiedaisch Resume Preview", use_container_width=True)
+st.image("Matthew_Kiedaisch_Resume.png", caption="Matthew Kiedaisch Resume Preview", use_container_width=True)
 
 st.markdown("---")
 
